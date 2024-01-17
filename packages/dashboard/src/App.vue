@@ -3,7 +3,7 @@
     <!-- insert wallpaper in the root component since it's used across all views -->
     <div v-if="wallpaper" class="wallpaper"
       :class="wallpaperClassList"
-      :style="{backgroundImage: `url('/wallpapers/${wallpaper}')`}"
+      :style="{backgroundImage: `url('/media/wallpapers/${wallpaper}')`}"
     ></div>
     <transition name="loading" mode>
       <div v-if="isIframe">

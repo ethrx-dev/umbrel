@@ -63,7 +63,7 @@ router.get('/v1/apps', safeHandler(async (req, res) => {
 	res.send(await appUtils.getBasicInfo(appIdSanitised));
 }));
 
-router.get('/wallpapers/:filename(\\d+[.]\\w+)', safeHandler(async(req, res) => {
+router.get('/media/wallpapers/:filename(\\d+[.]\\w+)', safeHandler(async(req, res) => {
 	const response = await dashboard.wallpaper.get(req.params.filename);
 	response.data.pipe(res);
 }));

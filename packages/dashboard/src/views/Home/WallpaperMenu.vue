@@ -15,7 +15,7 @@
           @click="selectWallpaper(wallpaper)"
         :key="wallpaper">
           <figure class="wallpaper-img-container mb-0">
-            <img class="wallpaper-img" :src="`/wallpapers/${wallpaper}`" draggable="false" >
+            <img class="wallpaper-img" :src="`/media/wallpapers/${wallpaper}`" draggable="false" >
           </figure>
         </li>
       </ul>

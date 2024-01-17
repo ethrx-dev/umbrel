@@ -16,7 +16,7 @@ const wallpaper = {
 	get: async function(filename) {
 		return axiosInstance({
 			method: 'GET',
-			url: `/wallpapers/${filename}`,
+			url: `/media/wallpapers/${filename}`,
 			responseType: 'stream'
 		});
 	}
